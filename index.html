@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="navbar" id="navbar">
@@ -15,7 +16,7 @@
             <ul>
                 <li>Accueil</li>
                 <li>Trending</li>
-                <li>Minimalist decor</li>
+                <li>Trending decor</li>
                 <li>About</li>
                 <li>Contact us</li>
             </ul>
@@ -37,7 +38,11 @@
     <div id="section4">
         
     </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script>
+        //ScrollReveal({ reset: true });
+        ScrollReveal().reveal('#section2', { delay: 200 });
+        ScrollReveal().reveal('#section4', { delay: 200 });
         const parallax = document.getElementById("section1");
         document.addEventListener("scroll", function(){
             var offset = window.pageYOffset;
