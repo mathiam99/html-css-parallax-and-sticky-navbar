@@ -93,12 +93,9 @@ div#section4{
 .menu-icon{
     display: none;
 }
+
 /*Responsive design*/
-@media screen and (max-width: 768px){
-
-}
-
-@media screen and (max-width: 375px){
+@media screen and (min-width: 320px) and (max-width: 414px){
     
     body{
         width: 100%;
@@ -119,6 +116,7 @@ div#section4{
     }
 
     .navbar{
+        height: 50px;
         justify-content: space-evenly;
     }
 
