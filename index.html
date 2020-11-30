@@ -10,17 +10,17 @@
 <body>
     <div class="navbar" id="navbar">
 
-        <div class="menu-icon">
-            <i class="material-icons">menu</i>    
+        <div class="menu-icon" onclick="scrolldown()">
+            <i class="material-icons">menu</i>   
         </div>
 
         <div class="logo">
             Parallax effect
         </div>
+
         <div class="menu">
             <ul>
                 <li>Accueil</li>
-                <li>Trending</li>
                 <li>Trending</li>
                 <li>About</li>
                 <li>Contact us</li>
@@ -43,12 +43,22 @@
     <div id="section4">
         
     </div>
+
+    <div id="section5">
+        
+    </div>
+
+    <div id="section6">
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
         //ScrollReveal({ reset: true });
         ScrollReveal().reveal('#section2', { delay: 200 });
         ScrollReveal().reveal('#section4', { delay: 200 });
         const parallax = document.getElementById("section1");
+
         document.addEventListener("scroll", function(){
             var offset = window.pageYOffset;
             parallax.style.backgroundPositionY = offset * 0.8 + "px";
@@ -58,6 +68,11 @@
             var header = document.getElementById("navbar");
             header.classList.toggle("sticky", window.scrollY > 0);
         })
+        
+        var scrolldown = () => {
+            let bar = document.getElementsByClassName("menu");
+            bar.style.display = "block";
+        }
     </script>
 </body>
 </html>
